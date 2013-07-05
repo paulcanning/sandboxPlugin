@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.sonyericsson.extras.liveview.plugins.sandbox"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:description="@string/application_description">
+        <service android:name="com.sonyericsson.extras.liveview.plugins.sandbox.SandboxPluginService"
+				 android:label="Sandbox plugin service">
+			<intent-filter>
+				<action android:name="com.sonyericsson.extras.liveview.plugins.sandbox.sandboxpluginservice"/>
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+        </service>
+        <activity android:name="com.sonyericsson.extras.liveview.plugins.PluginPreferences" 
+				  android:label="Sandbox plugin preferences">
+			<intent-filter>
+				<action android:name="com.sonyericsson.extras.liveview.plugins.sandbox.PREFERENCES"></action> 	
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+        </activity>
+	    <receiver android:name="com.sonyericsson.extras.liveview.plugins.PluginReceiver">
+			<intent-filter>
+				<action android:name="com.sonyericsson.extras.liveview.LAUNCH_PLUGIN" />
+			</intent-filter>
+	    </receiver>
+    </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-sdk android:minSdkVersion="4" />
+</manifest>
