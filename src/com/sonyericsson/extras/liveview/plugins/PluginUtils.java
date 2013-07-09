@@ -80,30 +80,8 @@ public final class PluginUtils {
         return iconFile.getAbsolutePath();
     }
     
-    /**
-     * Rotates and stores image to device
-     *  
-     * @param bitmap
-     * @param degrees
-     * @return
-     */
-    public static void rotateAndSend(LiveViewAdapter liveView, int pluginId, Bitmap bitmap, int degrees) {
-        Bitmap newBitmap = null;
-        try
-        {
-            Matrix matrix = new Matrix();
-            matrix.postRotate(degrees);
-            newBitmap = Bitmap.createBitmap(bitmap, 0, 0, bitmap.getWidth(), bitmap.getHeight(), matrix, true);
-        } catch(Exception e) {
-            Log.e(PluginConstants.LOG_TAG, "Failed to rotate bitmap.", e);
-            return;
-        }
-        
-        sendScaledImage(liveView, pluginId, newBitmap);
-    }
-    
     public static void sendTextBitmap(LiveViewAdapter liveView, int pluginId, String text) {
-        sendTextBitmap(liveView, pluginId, text, 64, 15);
+        sendTextBitmap(liveView, pluginId, text, 128, 15);
     }
     
     /**
@@ -120,7 +98,7 @@ public final class PluginUtils {
         // Empty bitmap and link the canvas to it
         Bitmap bitmap = null;
         try {
-            bitmap = Bitmap.createBitmap(bitmapSizeX, fontSize, Bitmap.Config.RGB_565);
+            bitmap = Bitmap.createBitmap(bitmapSizeX, (int) Math.floor(fontSize * 2.5), Bitmap.Config.RGB_565);
         }
         catch(IllegalArgumentException  e) {
             return;

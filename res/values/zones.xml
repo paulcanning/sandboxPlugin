@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezones">
+        <item>Pacific/Honolulu</item>
+        <item>America/Anchorage</item>
+        <item>America/Los_Angeles</item>
+		<item>America/Denver</item>
+		<item>America/Chicago</item>
+		<item>America/New_York</item>
+		<item>America/Caracas</item>
+		<item>America/Rio_Branco</item>
+		<item>Europe/London</item>
+		<item>Europe/Paris</item>
+		<item>Europe/Berlin</item>
+		<item>Europe/Athens</item>
+		<item>Africa/Cairo</item>
+		<item>Asia/Jerusalem</item>
+		<item>Asia/Amman</item>
+		<item>Asia/Tehran</item>
+		<item>Asia/Dubai</item>
+		<item>Asia/Kabul</item>
+		<item>Asia/Karachi</item>
+		<item>Asia/Kolkata</item>
+		<item>Asia/Dacca</item>
+		<item>Asia/Bangkok</item>
+		<item>Asia/Hong_Kong</item>
+		<item>Asia/Seoul</item>
+		<item>Asia/Tokyo</item>
+		<item>Australia/Adelaide</item>
+		<item>Australia/Sydney</item>
+		<item>Pacific/Auckland</item>
+    </string-array>
+
+</resources>

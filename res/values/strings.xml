@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Sandbox plugin</string>
+    <string name="app_name">LiveView World Times</string>
     <!-- 
     	The following strings needs to be defined in order for the Plugin to function.
     -->
-    <string name="pluginname">Sandbox plugin</string>
+    <string name="pluginname">World Times</string>
     <string name="intent_preferences">com.sonyericsson.extras.liveview.plugins.sandbox.PREFERENCES</string>
     <string name="intent_service">com.sonyericsson.extras.liveview.plugins.sandbox.sandboxpluginservice</string>
     <string name="application_description">Extends:com.sonyericsson.extras.liveview</string>

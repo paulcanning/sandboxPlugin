@@ -8,6 +8,9 @@
 package com.sonyericsson.extras.liveview.plugins.sandbox;
 
 public final class R {
+    public static final class array {
+        public static final int timezones=0x7f060000;
+    }
     public static final class attr {
     }
     public static final class drawable {
